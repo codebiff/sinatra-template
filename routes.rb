@@ -5,7 +5,7 @@ class Application < Sinatra::Base
   end
 
   get "/css/main.css" do
-    scss :main, :style => :nested
+    sass :main, :style => :nested
   end
 
   # Pull latest commit from GitHub automatically
