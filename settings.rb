@@ -1,5 +1,5 @@
 class Application < Sinatra::Base
 
-	set :title, 				"Application"
+	set :title, "Application"
 
 end
