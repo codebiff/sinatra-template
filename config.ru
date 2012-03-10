@@ -1,3 +1,5 @@
+$:.unshift File.dirname(__FILE__)
+
 require "sinatra"
 
 # Google Analytics
@@ -5,7 +7,7 @@ require "sinatra"
 #use Rack::GoogleAnalytics, :tracker => "UA-28186072-1"
 
 # The App
-require "./settings"
-require "./helpers"
-require "./routes"
+require "settings"
+require "helpers"
+require "routes"
 run Application
