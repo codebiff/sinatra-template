@@ -8,6 +8,7 @@ require "sinatra"
 
 # The App
 require "settings"
+require "models"
 require "helpers"
 require "routes"
 run Application
