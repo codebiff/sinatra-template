@@ -9,4 +9,6 @@ gem 'coffee-script'
 
 group :test do
 	gem 'rack-test'
+  gem 'rspec'
+  gem 'capybara'
 end
