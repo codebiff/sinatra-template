@@ -1,6 +1,9 @@
 $:.unshift File.dirname(__FILE__)
 
 require "sinatra"
+require "sinatra/flash"
+require "sass"
+require "coffee_script"
 
 # Google Analytics
 #require "rack/google-analytics"

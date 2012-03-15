@@ -1,4 +1,6 @@
 class Application < Sinatra::Base
+  enable :sessions
+  register Sinatra::Flash
 
   get "/" do
     erb :index
@@ -8,7 +10,14 @@ class Application < Sinatra::Base
     sass :main, {:load_paths => ["public/css"]}
   end
 
-  # Pull latest commit from GitHub automatically
+  get "/js/main.js" do
+    coffee :main
+  end
+
+  get "/js/main.js" do
+    coffee :main
+  end
+
   post "/pull" do
     system "git pull && touch tmp/restart.txt"
   end
