@@ -1,6 +1,9 @@
 class Application < Sinatra::Base
   enable :sessions
   register Sinatra::Flash
+  register Sinatra::ConfigFile
+
+  config_file "./config.yml"
 
   get "/" do
     erb :index

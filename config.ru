@@ -1,6 +1,7 @@
 $:.unshift File.dirname(__FILE__)
 
 require "sinatra"
+require "sinatra/config_file"
 require "sinatra/flash"
 require "sass"
 require "coffee_script"
@@ -10,7 +11,6 @@ require "coffee_script"
 #use Rack::GoogleAnalytics, :tracker => "UA-28186072-1"
 
 # The App
-require "settings"
 require "models"
 require "helpers"
 require "routes"
