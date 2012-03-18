@@ -6,6 +6,7 @@ ENV["RACK_ENV"] = "test"
 
 Rspec.configure do |conf|
   conf.include Rack::Test::Methods
+  conf.include Capybara::DSL
 end
 
 def app
