@@ -5,11 +5,15 @@ gem 'sinatra-contrib'
 gem 'sass'
 gem 'coffee-script'
 
-# gem 'datamapper'
-# gem 'dm-sqlite-adapter'
-
-group :test do
+group [:test, :development] do
 	gem 'rack-test'
   gem 'rspec'
   gem 'capybara'
+# gem 'datamapper'
+# gem 'dm-sqlite-adapter'
+end
+
+group :production do
+# gem 'pg'
+# gem 'dm-postgres-adapter'
 end
